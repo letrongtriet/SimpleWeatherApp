@@ -13,6 +13,8 @@
 		35AB1E5E2AC691E4002A38FD /* SimpleWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E5D2AC691E4002A38FD /* SimpleWeatherAppTests.swift */; };
 		35AB1E682AC691E4002A38FD /* SimpleWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E672AC691E4002A38FD /* SimpleWeatherAppUITests.swift */; };
 		35AB1E6A2AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E692AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift */; };
+		35AB1E782AC69315002A38FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E772AC69315002A38FD /* Coordinator.swift */; };
+		35AB1E7A2AC69347002A38FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E792AC69347002A38FD /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		35AB1E632AC691E4002A38FD /* SimpleWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AB1E672AC691E4002A38FD /* SimpleWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppUITests.swift; sourceTree = "<group>"; };
 		35AB1E692AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35AB1E772AC69315002A38FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		35AB1E792AC69347002A38FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		35AB1E452AC691E3002A38FD /* SimpleWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				35AB1E762AC692F0002A38FD /* Coordinator */,
 				35AB1E462AC691E3002A38FD /* AppDelegate.swift */,
 				35AB1E4F2AC691E3002A38FD /* Assets.xcassets */,
 				35AB1E512AC691E3002A38FD /* LaunchScreen.storyboard */,
@@ -116,6 +121,15 @@
 				35AB1E692AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift */,
 			);
 			path = SimpleWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		35AB1E762AC692F0002A38FD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E772AC69315002A38FD /* Coordinator.swift */,
+				35AB1E792AC69347002A38FD /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AB1E7A2AC69347002A38FD /* AppCoordinator.swift in Sources */,
+				35AB1E782AC69315002A38FD /* Coordinator.swift in Sources */,
 				35AB1E472AC691E3002A38FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
