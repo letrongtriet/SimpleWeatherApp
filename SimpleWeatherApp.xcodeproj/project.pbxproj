@@ -17,6 +17,9 @@
 		35AB1E7A2AC69347002A38FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E792AC69347002A38FD /* AppCoordinator.swift */; };
 		35AB1E7D2AC69758002A38FD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 35AB1E7C2AC69758002A38FD /* Lottie */; };
 		35AB1E802AC69789002A38FD /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E7F2AC69789002A38FD /* LottieView.swift */; };
+		35AB1E862AC69A8D002A38FD /* onboarding2.json in Resources */ = {isa = PBXBuildFile; fileRef = 35AB1E832AC69A8D002A38FD /* onboarding2.json */; };
+		35AB1E872AC69A8D002A38FD /* onboarding3.json in Resources */ = {isa = PBXBuildFile; fileRef = 35AB1E842AC69A8D002A38FD /* onboarding3.json */; };
+		35AB1E882AC69A8D002A38FD /* onboarding1.json in Resources */ = {isa = PBXBuildFile; fileRef = 35AB1E852AC69A8D002A38FD /* onboarding1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		35AB1E772AC69315002A38FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		35AB1E792AC69347002A38FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		35AB1E7F2AC69789002A38FD /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		35AB1E832AC69A8D002A38FD /* onboarding2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboarding2.json; sourceTree = "<group>"; };
+		35AB1E842AC69A8D002A38FD /* onboarding3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboarding3.json; sourceTree = "<group>"; };
+		35AB1E852AC69A8D002A38FD /* onboarding1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboarding1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,9 @@
 		35AB1E822AC698AC002A38FD /* LottieFiles */ = {
 			isa = PBXGroup;
 			children = (
+				35AB1E852AC69A8D002A38FD /* onboarding1.json */,
+				35AB1E832AC69A8D002A38FD /* onboarding2.json */,
+				35AB1E842AC69A8D002A38FD /* onboarding3.json */,
 			);
 			path = LottieFiles;
 			sourceTree = "<group>";
@@ -273,6 +282,9 @@
 			files = (
 				35AB1E532AC691E3002A38FD /* LaunchScreen.storyboard in Resources */,
 				35AB1E502AC691E3002A38FD /* Assets.xcassets in Resources */,
+				35AB1E872AC69A8D002A38FD /* onboarding3.json in Resources */,
+				35AB1E882AC69A8D002A38FD /* onboarding1.json in Resources */,
+				35AB1E862AC69A8D002A38FD /* onboarding2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,21 @@
 import SwiftUI
 import Lottie
 
+/*
+ Helper class to expose Lottie animation in UIKit to SwiftUI
+ */
 struct LottieView: UIViewRepresentable {
+    // MARK: - Properties
     let name: String
     let loopMode: LottieLoopMode
 
+    // MARK: - Init
+    init(name: String, loopMode: LottieLoopMode = .loop) {
+        self.name = name
+        self.loopMode = loopMode
+    }
+
+    // MARK: - UIViewRepresentable
     func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         let view = UIView(frame: .zero)
 
