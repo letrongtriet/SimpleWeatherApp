@@ -13,7 +13,7 @@ struct MainView: View {
     var body: some View {
         VStack {
             if isOnboardingCompleted == true {
-
+                WeatherListView(viewModel: .init(service: WeatherServiceImplementation()))
             } else {
                 OnboardingView(viewModel: .init())
             }
