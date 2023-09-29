@@ -287,8 +287,6 @@
 				35AB1E9D2AC6CC35002A38FD /* WeatherListView.swift */,
 				35AB1EBE2AC6D61A002A38FD /* WeatherDetailView.swift */,
 				35AB1EC42AC6DA64002A38FD /* WeatherCellView.swift */,
-				35AB1EC62AC6DB1D002A38FD /* LoadingView.swift */,
-				35AB1EC82AC6DB35002A38FD /* RetryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +316,8 @@
 		35AB1EB52AC6CD2F002A38FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35AB1EC62AC6DB1D002A38FD /* LoadingView.swift */,
+				35AB1EC82AC6DB35002A38FD /* RetryView.swift */,
 				35AB1E7F2AC69789002A38FD /* LottieView.swift */,
 			);
 			path = View;
