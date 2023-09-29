@@ -16,6 +16,7 @@
 		35AB1E782AC69315002A38FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E772AC69315002A38FD /* Coordinator.swift */; };
 		35AB1E7A2AC69347002A38FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E792AC69347002A38FD /* AppCoordinator.swift */; };
 		35AB1E7D2AC69758002A38FD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 35AB1E7C2AC69758002A38FD /* Lottie */; };
+		35AB1E802AC69789002A38FD /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E7F2AC69789002A38FD /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		35AB1E692AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		35AB1E772AC69315002A38FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		35AB1E792AC69347002A38FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		35AB1E7F2AC69789002A38FD /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,8 @@
 		35AB1E452AC691E3002A38FD /* SimpleWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				35AB1E812AC698A7002A38FD /* Resources */,
+				35AB1E7E2AC69777002A38FD /* Helper */,
 				35AB1E762AC692F0002A38FD /* Coordinator */,
 				35AB1E462AC691E3002A38FD /* AppDelegate.swift */,
 				35AB1E4F2AC691E3002A38FD /* Assets.xcassets */,
@@ -132,6 +136,29 @@
 				35AB1E792AC69347002A38FD /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		35AB1E7E2AC69777002A38FD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E7F2AC69789002A38FD /* LottieView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		35AB1E812AC698A7002A38FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E822AC698AC002A38FD /* LottieFiles */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35AB1E822AC698AC002A38FD /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LottieFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +300,7 @@
 				35AB1E7A2AC69347002A38FD /* AppCoordinator.swift in Sources */,
 				35AB1E782AC69315002A38FD /* Coordinator.swift in Sources */,
 				35AB1E472AC691E3002A38FD /* AppDelegate.swift in Sources */,
+				35AB1E802AC69789002A38FD /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
