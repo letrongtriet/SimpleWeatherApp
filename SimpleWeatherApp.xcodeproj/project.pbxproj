@@ -13,8 +13,6 @@
 		35AB1E5E2AC691E4002A38FD /* SimpleWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E5D2AC691E4002A38FD /* SimpleWeatherAppTests.swift */; };
 		35AB1E682AC691E4002A38FD /* SimpleWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E672AC691E4002A38FD /* SimpleWeatherAppUITests.swift */; };
 		35AB1E6A2AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E692AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift */; };
-		35AB1E782AC69315002A38FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E772AC69315002A38FD /* Coordinator.swift */; };
-		35AB1E7A2AC69347002A38FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E792AC69347002A38FD /* AppCoordinator.swift */; };
 		35AB1E7D2AC69758002A38FD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 35AB1E7C2AC69758002A38FD /* Lottie */; };
 		35AB1E802AC69789002A38FD /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E7F2AC69789002A38FD /* LottieView.swift */; };
 		35AB1E862AC69A8D002A38FD /* onboarding2.json in Resources */ = {isa = PBXBuildFile; fileRef = 35AB1E832AC69A8D002A38FD /* onboarding2.json */; };
@@ -24,6 +22,7 @@
 		35AB1E912AC69F57002A38FD /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E902AC69F57002A38FD /* OnboardingItem.swift */; };
 		35AB1E932AC6A57D002A38FD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E922AC6A57D002A38FD /* OnboardingView.swift */; };
 		35AB1E982AC6A974002A38FD /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E972AC6A974002A38FD /* OnboardingViewModel.swift */; };
+		35AB1E9B2AC6B0BD002A38FD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E9A2AC6B0BD002A38FD /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +53,6 @@
 		35AB1E632AC691E4002A38FD /* SimpleWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AB1E672AC691E4002A38FD /* SimpleWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppUITests.swift; sourceTree = "<group>"; };
 		35AB1E692AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		35AB1E772AC69315002A38FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		35AB1E792AC69347002A38FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		35AB1E7F2AC69789002A38FD /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		35AB1E832AC69A8D002A38FD /* onboarding2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboarding2.json; sourceTree = "<group>"; };
 		35AB1E842AC69A8D002A38FD /* onboarding3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboarding3.json; sourceTree = "<group>"; };
@@ -64,6 +61,7 @@
 		35AB1E902AC69F57002A38FD /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		35AB1E922AC6A57D002A38FD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		35AB1E972AC6A974002A38FD /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		35AB1E9A2AC6B0BD002A38FD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,6 @@
 				35AB1E892AC69AAA002A38FD /* App */,
 				35AB1E812AC698A7002A38FD /* Resources */,
 				35AB1E7E2AC69777002A38FD /* Helper */,
-				35AB1E762AC692F0002A38FD /* Coordinator */,
 				35AB1E462AC691E3002A38FD /* AppDelegate.swift */,
 				35AB1E4F2AC691E3002A38FD /* Assets.xcassets */,
 				35AB1E512AC691E3002A38FD /* LaunchScreen.storyboard */,
@@ -142,15 +139,6 @@
 				35AB1E692AC691E4002A38FD /* SimpleWeatherAppUITestsLaunchTests.swift */,
 			);
 			path = SimpleWeatherAppUITests;
-			sourceTree = "<group>";
-		};
-		35AB1E762AC692F0002A38FD /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				35AB1E772AC69315002A38FD /* Coordinator.swift */,
-				35AB1E792AC69347002A38FD /* AppCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		35AB1E7E2AC69777002A38FD /* Helper */ = {
@@ -182,6 +170,8 @@
 		35AB1E892AC69AAA002A38FD /* App */ = {
 			isa = PBXGroup;
 			children = (
+				35AB1E9C2AC6B3E5002A38FD /* Weather */,
+				35AB1E992AC6B0A5002A38FD /* Main */,
 				35AB1E8A2AC69AB0002A38FD /* Onboarding */,
 			);
 			path = App;
@@ -220,6 +210,21 @@
 				35AB1E972AC6A974002A38FD /* OnboardingViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		35AB1E992AC6B0A5002A38FD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E9A2AC6B0BD002A38FD /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		35AB1E9C2AC6B3E5002A38FD /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,8 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AB1E8D2AC69CF6002A38FD /* OnboardingCardView.swift in Sources */,
-				35AB1E7A2AC69347002A38FD /* AppCoordinator.swift in Sources */,
-				35AB1E782AC69315002A38FD /* Coordinator.swift in Sources */,
+				35AB1E9B2AC6B0BD002A38FD /* MainView.swift in Sources */,
 				35AB1E982AC6A974002A38FD /* OnboardingViewModel.swift in Sources */,
 				35AB1E472AC691E3002A38FD /* AppDelegate.swift in Sources */,
 				35AB1E802AC69789002A38FD /* LottieView.swift in Sources */,

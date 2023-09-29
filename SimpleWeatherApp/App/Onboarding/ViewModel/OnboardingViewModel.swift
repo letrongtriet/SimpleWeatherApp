@@ -8,7 +8,7 @@
 import SwiftUI
 
 class OnboardingViewModel {
-    @AppStorage("isOnboardingCompleted") var isOnboardingCompleted: Bool = false
+    @AppStorage("isOnboardingCompleted") var isOnboardingCompleted: Bool?
 
     lazy var items: [OnboardingItem] = [
         .init(

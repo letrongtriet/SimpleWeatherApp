@@ -23,6 +23,7 @@ struct OnboardingCardView: View {
                     .multilineTextAlignment(.center)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
+                    .padding(.horizontal, 16)
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
 
                 Text(item.description)
