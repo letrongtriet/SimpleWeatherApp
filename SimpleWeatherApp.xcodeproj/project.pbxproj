@@ -20,6 +20,10 @@
 		35AB1E862AC69A8D002A38FD /* onboarding2.json in Resources */ = {isa = PBXBuildFile; fileRef = 35AB1E832AC69A8D002A38FD /* onboarding2.json */; };
 		35AB1E872AC69A8D002A38FD /* onboarding3.json in Resources */ = {isa = PBXBuildFile; fileRef = 35AB1E842AC69A8D002A38FD /* onboarding3.json */; };
 		35AB1E882AC69A8D002A38FD /* onboarding1.json in Resources */ = {isa = PBXBuildFile; fileRef = 35AB1E852AC69A8D002A38FD /* onboarding1.json */; };
+		35AB1E8D2AC69CF6002A38FD /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E8C2AC69CF6002A38FD /* OnboardingCardView.swift */; };
+		35AB1E912AC69F57002A38FD /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E902AC69F57002A38FD /* OnboardingItem.swift */; };
+		35AB1E932AC6A57D002A38FD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E922AC6A57D002A38FD /* OnboardingView.swift */; };
+		35AB1E982AC6A974002A38FD /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1E972AC6A974002A38FD /* OnboardingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		35AB1E832AC69A8D002A38FD /* onboarding2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboarding2.json; sourceTree = "<group>"; };
 		35AB1E842AC69A8D002A38FD /* onboarding3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboarding3.json; sourceTree = "<group>"; };
 		35AB1E852AC69A8D002A38FD /* onboarding1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboarding1.json; sourceTree = "<group>"; };
+		35AB1E8C2AC69CF6002A38FD /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
+		35AB1E902AC69F57002A38FD /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		35AB1E922AC6A57D002A38FD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		35AB1E972AC6A974002A38FD /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		35AB1E452AC691E3002A38FD /* SimpleWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				35AB1E892AC69AAA002A38FD /* App */,
 				35AB1E812AC698A7002A38FD /* Resources */,
 				35AB1E7E2AC69777002A38FD /* Helper */,
 				35AB1E762AC692F0002A38FD /* Coordinator */,
@@ -168,6 +177,49 @@
 				35AB1E842AC69A8D002A38FD /* onboarding3.json */,
 			);
 			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+		35AB1E892AC69AAA002A38FD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E8A2AC69AB0002A38FD /* Onboarding */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		35AB1E8A2AC69AB0002A38FD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E962AC6A963002A38FD /* ViewModel */,
+				35AB1E8F2AC69F48002A38FD /* Model */,
+				35AB1E8B2AC69CE3002A38FD /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		35AB1E8B2AC69CE3002A38FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E8C2AC69CF6002A38FD /* OnboardingCardView.swift */,
+				35AB1E922AC6A57D002A38FD /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35AB1E8F2AC69F48002A38FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E902AC69F57002A38FD /* OnboardingItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35AB1E962AC6A963002A38FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				35AB1E972AC6A974002A38FD /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,10 +361,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AB1E8D2AC69CF6002A38FD /* OnboardingCardView.swift in Sources */,
 				35AB1E7A2AC69347002A38FD /* AppCoordinator.swift in Sources */,
 				35AB1E782AC69315002A38FD /* Coordinator.swift in Sources */,
+				35AB1E982AC6A974002A38FD /* OnboardingViewModel.swift in Sources */,
 				35AB1E472AC691E3002A38FD /* AppDelegate.swift in Sources */,
 				35AB1E802AC69789002A38FD /* LottieView.swift in Sources */,
+				35AB1E912AC69F57002A38FD /* OnboardingItem.swift in Sources */,
+				35AB1E932AC6A57D002A38FD /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
