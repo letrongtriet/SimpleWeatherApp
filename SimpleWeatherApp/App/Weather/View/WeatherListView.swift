@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WeatherListView: View {
     @ObservedObject var viewModel: WeatherListViewModel
+    @Environment (\.scenePhase) private var scenePhase
 
     var body: some View {
         NavigationStack {
@@ -21,7 +22,7 @@ struct WeatherListView: View {
                     case .retry:
                         RetryView {
                             Task {
-                                await viewModel.fetchWeatherList()
+                                await viewModel.start()
                             }
                         }
 
@@ -40,9 +41,12 @@ struct WeatherListView: View {
                         }
                     }
                 }
-                .task {
-                    await viewModel.fetchWeatherList()
-                }
+            }
+            .task {
+                await viewModel.start()
+            }
+            .onChange(of: scenePhase) { newPhase in
+                viewModel.applicationScenePhaseChanged(newPhase)
             }
             .frame(
                 minWidth: 0,
