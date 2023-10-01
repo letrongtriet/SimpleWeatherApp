@@ -8,6 +8,9 @@
 import Foundation
 
 extension Sequence {
+    /**
+     Use to transform a normal array mapping to work with Async/Await
+     */
     func asyncMap<T>(
         _ transform: (Element) async throws -> T
     ) async rethrows -> [T] {

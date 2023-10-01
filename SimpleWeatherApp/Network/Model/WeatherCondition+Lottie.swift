@@ -7,6 +7,9 @@
 
 import Foundation
 
+/**
+ Simple mapping from the default OpenWeather icon to corresponding animation file
+ */
 extension WeatherCondition {
     var weatherAnimationName: String {
         switch weather.first?.icon {

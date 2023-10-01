@@ -7,6 +7,14 @@
 
 import Foundation
 
+/**
+ - Parameters:
+    - animationFileName: Lottie animation file name for animation
+    - title: the tite for current onboarding screen
+    - description: description for current onboarding screen
+    - shouldShowStartButton: used only for last screen
+    - startButtonCallback: come in pair with `shouldShowStartButton`
+ */
 struct OnboardingItem {
     let animationFileName: String
     let title: String

@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Where all basic generic properties of the app
+// e.g, base url
 struct AppConfiguration {
     struct OpenWeather {
         static let baseURLString = "https://api.openweathermap.org/"

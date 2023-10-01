@@ -7,6 +7,9 @@
 
 import Foundation
 
+/**
+ API response class from OpenWeather for current weather of specific city
+ */
 struct WeatherCondition: APIResponse, Equatable {
     let weather: [Weather]
     let main: Main

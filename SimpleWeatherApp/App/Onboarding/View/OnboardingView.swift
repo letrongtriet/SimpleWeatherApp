@@ -41,6 +41,8 @@ struct OnboardingView: View {
         }
     }
 
+    // SwiftUI does not have functionality to change the page indicator yet
+    // Still need to manipulate the UIPageControl
     private func setupAppearance() {
         UIPageControl.appearance().currentPageIndicatorTintColor = .black
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)

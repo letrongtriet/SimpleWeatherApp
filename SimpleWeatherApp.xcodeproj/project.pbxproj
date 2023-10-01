@@ -130,6 +130,7 @@
 		35AB1EE62AC80498002A38FD /* OnboardingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTests.swift; sourceTree = "<group>"; };
 		35AB1EE82AC806CA002A38FD /* WeatherListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTests.swift; sourceTree = "<group>"; };
 		35AB1EEA2AC807FC002A38FD /* WeatherListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewState.swift; sourceTree = "<group>"; };
+		35AB1EED2AC93473002A38FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +182,7 @@
 		35AB1E452AC691E3002A38FD /* SimpleWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				35AB1EED2AC93473002A38FD /* README.md */,
 				35AB1EBB2AC6CD6C002A38FD /* Service */,
 				35AB1EA32AC6CC7C002A38FD /* Network */,
 				35AB1E892AC69AAA002A38FD /* App */,

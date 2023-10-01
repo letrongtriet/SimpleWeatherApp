@@ -8,7 +8,7 @@
 import SwiftUI
 import Lottie
 
-/*
+/**
  Helper class to expose Lottie animation in UIKit to SwiftUI
  */
 struct LottieView: UIViewRepresentable {

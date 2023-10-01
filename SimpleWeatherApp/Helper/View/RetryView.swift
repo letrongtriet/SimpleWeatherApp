@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/**
+ The generic retry view
+    - extension in future to support more error cases
+ */
 struct RetryView: View {
     let retryCallback: (() -> ())?
 
