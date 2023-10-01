@@ -20,7 +20,9 @@ struct WeatherListView: View {
 
                     case .retry:
                         RetryView {
-                            viewModel.fetchWeatherList()
+                            Task {
+                                await viewModel.fetchWeatherList()
+                            }
                         }
 
                     case .results(let items):
@@ -39,7 +41,7 @@ struct WeatherListView: View {
                     }
                 }
                 .task {
-                    viewModel.fetchWeatherList()
+                    await viewModel.fetchWeatherList()
                 }
             }
             .frame(

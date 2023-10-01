@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct WeatherCondition: APIResponse {
+struct WeatherCondition: APIResponse, Equatable {
     let weather: [Weather]
     let main: Main
     let visibility: Int
     let wind: Wind
 }
 
-struct Main: Codable {
+struct Main: Codable, Equatable {
     let temp, feelsLike, tempMin, tempMax: Double
     let pressure, humidity, seaLevel, grndLevel: Int?
 
@@ -29,14 +29,13 @@ struct Main: Codable {
     }
 }
 
-struct Weather: Codable {
+struct Weather: Codable, Equatable {
     let id: Int
     let main, description, icon: String
 }
 
-struct Wind: Codable {
+struct Wind: Codable, Equatable {
     let speed: Double
     let deg: Int?
     let gust: Double?
 }
-

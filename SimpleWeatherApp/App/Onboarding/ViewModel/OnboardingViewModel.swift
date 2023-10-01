@@ -29,12 +29,12 @@ class OnboardingViewModel {
             description: "Tap the Start button below to kick start your best experience yet!",
             shouldShowStartButton: true,
             startButtonCallback: { [weak self] in
-                self?.handleStartButtonCallback()
+                self?.finishOnboarding()
             }
         ),
     ]
 
-    private func handleStartButtonCallback() {
+    func finishOnboarding() {
         isOnboardingCompleted = true
     }
 }

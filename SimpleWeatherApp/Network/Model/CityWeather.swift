@@ -7,17 +7,8 @@
 
 import Foundation
 
-import Foundation
-
-struct CityWeather: Identifiable {
+struct CityWeather: Identifiable, Equatable {
     let id = UUID()
     let city: String
     let weatherCondition: WeatherCondition
-
-    var weatherConditionIcon: String {
-        /*
-         https://openweathermap.org/img/wn/10d@2x.png
-         */
-        AppConfiguration.OpenWeather.weatherIconURLString + "\(weatherCondition.weather.first?.icon ?? "")@2x.png"
-    }
 }

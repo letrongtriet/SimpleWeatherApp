@@ -17,12 +17,8 @@ struct WeatherDetailView: View {
                 .fontWeight(.bold)
                 .foregroundStyle(.black)
 
-            AsyncImage(url: URL(string: cityWeather.weatherConditionIcon)) { image in
-                image.resizable()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 150, height: 150)
+            LottieView(name: cityWeather.weatherCondition.weatherAnimationName)
+                .frame(width: 150, height: 150)
 
             Text("\(Int(cityWeather.weatherCondition.main.temp))°")
                 .font(.largeTitle)

@@ -7,18 +7,21 @@
 
 import SwiftUI
 
-enum WeatherListViewState {
-    case loading
-    case retry
-    case results([CityWeather])
-}
-
 class WeatherListViewModel: ObservableObject {
     // MARK: - Observables
     @Published var state: WeatherListViewState = .loading
 
     // MARK: - Private variables
     private let service: WeatherService
+    
+    private var cities: [String] = [
+        "Gothenburg",
+        "Stockholm",
+        "Mountain View",
+        "London",
+        "New York",
+        "Berlin"
+    ]
 
     // MARK: - Init
     init(service: WeatherService) {
@@ -27,15 +30,13 @@ class WeatherListViewModel: ObservableObject {
 
     // MARK: - Public methods
     @MainActor
-    func fetchWeatherList() {
-        Task {
-            do {
-                let result = try await service.fetchWeather(for: AppConfiguration.defaultCities)
-                state = .results(result)
-            } catch {
-                print(error)
-                state = .retry
-            }
+    func fetchWeatherList() async {
+        do {
+            let result = try await service.fetchWeather(for: cities)
+            state = .results(result)
+        } catch {
+            print(error)
+            state = .retry
         }
     }
 }
